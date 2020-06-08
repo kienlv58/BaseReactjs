@@ -18,11 +18,10 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react",
-    "baseUrl": ".",
-    "paths": {
-      "*": ["@types/*"],
-      "src/*": ["./src/*"]
-    }
+    "baseUrl": "."
   },
-  "include": ["src"]
+  "extends": "./tsconfig.paths.json",
+  "include": [
+    "src"
+  ]
 }
